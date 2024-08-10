@@ -1,0 +1,131 @@
+/* Container for centering content and adding some spacing */
+.container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+  }
+  
+  /* Title styling with improved visibility */
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Span styling within title with modern background and padding */
+  .title span {
+    background-color: #4A5F88;
+    color: #00E0C6;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  /* Styling for the reset button with modern design */
+  .reset {
+    padding: 12px 25px;
+    border-radius: 8px;
+    background-color: #3B4D61;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    margin: 30px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for reset button with subtle animation */
+  .reset:hover {
+    background-color: #4A5F88;
+    transform: translateY(-2px);
+  }
+  
+  /* Styling for the game board using CSS grid */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2E3A4A;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styling for each box with proper dimensions and alignment */
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: #444C56;
+    border: 3px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for boxes with smooth transition */
+  .boxes:hover {
+    background-color: #55606E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling inside each box, centered and fitting perfectly */
+  .boxes img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  
+  /* Additional styling for a polished game look */
+  body {
+    background-color: #1C1F24;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 480px) {
+    /* Responsive adjustments for smaller screens */
+    .board {
+      width: 280px;
+      gap: 10px;
+    }
+  
+    .boxes {
+      height: 90px;
+      width: 90px;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .reset {
+      font-size: 14px;
+    }
+  }
+  
